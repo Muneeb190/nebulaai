@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import Pricing from './components/Pricing'
 import Partners from './components/Partners'
 import HowItWorks from './components/How_it_works'
-
 import FAQ1 from './components/faq1'
 import { GridPatternSpotlight } from './components/test'
 
@@ -17,7 +16,6 @@ const Page = () => {
       <Partners/>
       <Pricing/>
       <HowItWorks/>
-    
       <FAQ1/>
       <GridPatternSpotlight/>
     </div>
