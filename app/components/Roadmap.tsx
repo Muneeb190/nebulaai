@@ -1,7 +1,7 @@
 'use client'
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import useEmblaCarousel, { UseEmblaCarouselType } from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const Roadmap = () => {
