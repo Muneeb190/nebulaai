@@ -5,27 +5,3 @@
 
 body { margin: 20px; }
 
-.marquee {
-  height: 25px;
-  width: 1280px;
-
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee div {
-  position: absolute;
-  overflow: hidden;
-
-  animation: marquee 6s linear infinite;
-}
-
-.marquee span {
-  float: left;
-  width: 50%;
-}
-
-@keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
-}

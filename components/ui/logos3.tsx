@@ -1,12 +1,4 @@
 "use client";
-import zotac from "@/public/zotac_white.svg"
-import amd from "@/public/amd.svg"
-import nvidia from "@/public/nvidia.svg"
-import intel from "@/public/intel.png"
-import proof from "@/public/proof.png"
-import vastai from "@/public/vastai.png"
-import ryzen from "@/public/ryzen1.svg"
-import msi from "@/public/msi-5-logo-black-and-white.png"
 
 import AutoScroll from "embla-carousel-auto-scroll";
 
@@ -15,7 +7,6 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 
 interface Logo {
   id: string;
@@ -35,56 +26,58 @@ const Logos3 = ({
     {
       id: "logo-1",
       description: "Logo 1",
-      image: zotac.src,
-      className: "h-5 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/astro.svg",
+      className: "h-7 w-auto",
     },
     {
       id: "logo-2",
       description: "Logo 2",
-      image: amd.src,
-      className: "h-9 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/figma.svg",
+      className: "h-7 w-auto",
     },
     {
       id: "logo-3",
       description: "Logo 3",
-      image: nvidia.src,
-      className: "h-25 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/nextjs.svg",
+      className: "h-7 w-auto",
     },
     {
       id: "logo-4",
       description: "Logo 4",
-      image: intel.src,
-      className: "h-10 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/react.png",
+      className: "h-7 w-auto",
     },
     {
       id: "logo-5",
       description: "Logo 5",
-      image: proof.src,
-      className: "h-5 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/shadcn-ui.svg",
+      className: "h-7 w-auto",
     },
     {
       id: "logo-6",
       description: "Logo 6",
-      image: vastai.src,
-      className: "h-32 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/supabase.svg",
+      className: "h-7 w-auto",
     },
     {
       id: "logo-7",
       description: "Logo 7",
-      image: ryzen.src,
-      className: "h-10 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/tailwind.svg",
+      className: "h-4 w-auto",
     },
     {
       id: "logo-8",
       description: "Logo 8",
-      image: msi.src,
-      className: "h-4 w-auto",
+      image: "https://shadcnblocks.com/images/block/logos/vercel.svg",
+      className: "h-7 w-auto",
     },
   ],
 }: Logos3Props) => {
   return (
-    <section className="pb-10">
-      <div className="pt-10 md:pt-16 lg:pt-20">
+    <section className="py-32">
+      <div className="container flex flex-col items-center text-center">
+      </div>
+      <div className="pt-10 md:pt-16 lg:pt-5">
         <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl">
           <Carousel
             opts={{ loop: true }}
@@ -98,7 +91,7 @@ const Logos3 = ({
                 >
                   <div className="mx-10 flex shrink-0 items-center justify-center">
                     <div>
-                      <Image
+                      <img
                         src={logo.image}
                         alt={logo.description}
                         className={logo.className}

@@ -1,9 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import TextShimmerColor from '@/components/ui/text';
-import { SlCopyButton } from '@shoelace-style/shoelace/dist/react';
-
-
 
 const Hero = () => {
   return (
@@ -14,7 +11,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center pt-40 h-full">
           <div className="flex items-center justify-between px-4 py-0 md:mb-0 mb-3 w-full max-w-sm rounded-full border bg-gradient-to-r from-black via-[#00093399] to-[#00082999] text-card-foreground shadow-sm">
             <code className="font-mono text-sm truncate">0x701C7542cD5D69494ef9fc8829a7F6093aD8084C</code>
-            <SlCopyButton className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-3 text-xs" id="copyButton" value="0x701C7542cD5D69494ef9fc8829a7F6093aD8084C" />
+            
           </div>
 
           <div className="container mx-auto px-4 z-10">
