@@ -112,7 +112,7 @@ export const LampContainer = ({
             <AccordionItem value="item-5">
               <AccordionTrigger>What is the Super-App Marketplace?</AccordionTrigger>
               <AccordionContent>
-              You don't just rent GPUs—you can also use Nebula AI's built-in AI tools. Run machine learning models, generate AI images, or fine-tune LLMs instantly, with no setup required.
+              You don{`'`}t just rent GPUs—you can also use Nebula AI{`'`}s built-in AI tools. Run machine learning models, generate AI images, or fine-tune LLMs instantly, with no setup required.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
