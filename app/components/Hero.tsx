@@ -1,6 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import TextShimmerColor from '@/components/ui/text';
+import { Copy } from 'lucide-react';
+
+function CopyToClipboard(){
+  navigator.clipboard.writeText("0x701C7542cD5D69494ef9fc8829a7F6093aD8084C");
+}
 
 const Hero = () => {
   return (
@@ -11,9 +16,8 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center pt-40 h-full">
           <div className="flex items-center justify-between px-4 py-0 md:mb-0 mb-3 w-full max-w-sm rounded-full border bg-gradient-to-r from-black via-[#00093399] to-[#00082999] text-card-foreground shadow-sm">
             <code className="font-mono text-sm truncate">0x701C7542cD5D69494ef9fc8829a7F6093aD8084C</code>
-            
+            <button onClick={CopyToClipboard} className='px-2 py-1.5 cursor-pointer'><Copy className='size-4'/></button>
           </div>
-
           <div className="container mx-auto px-4 z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="ml-0 lg:ml-10">
