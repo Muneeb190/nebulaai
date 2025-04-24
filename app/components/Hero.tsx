@@ -21,7 +21,6 @@ const Hero = () => {
       scrollTrigger: {
         trigger: "#partners",
         scroller: "body",
-        markers: true,
         start: "top 50%",
         end:"top 30%",
       }
@@ -31,7 +30,6 @@ const Hero = () => {
       scrollTrigger: {
         trigger: "#pricing",
         scroller: "body",
-        markers: true,
         start: "top 50%",
         end:"top 30%",
       }
@@ -41,7 +39,6 @@ const Hero = () => {
       scrollTrigger: {
         trigger: "#how-it-works",
         scroller: "body",
-        markers: true,
         start: "top 50%",
         end:"top 30%",
       }
@@ -51,7 +48,6 @@ const Hero = () => {
       scrollTrigger: {
         trigger: "#faq",
         scroller: "body",
-        markers: true,
         start: "top 50%",
         end:"top 30%",
       }
@@ -61,7 +57,6 @@ const Hero = () => {
       scrollTrigger: {
         trigger: "#footer",
         scroller: "body",
-        markers: true,
         start: "top 50%",
       }
     })
