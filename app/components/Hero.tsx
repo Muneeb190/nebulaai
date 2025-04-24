@@ -57,7 +57,6 @@ const Hero = () => {
       scrollTrigger: {
         trigger: "#footer",
         scroller: "body",
-        markers: true,
         start: "top 70%",
       }
     })
