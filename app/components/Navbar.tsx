@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="h-21 py-2 fixed top-0 inset-x-0 w-full backdrop-blur-lg border-b border-[#0f1a30] z-50">
-      <div className="container mx-auto w-full flex items-center justify-between h-16">
+    <header className="px-8 h-21 py-2 fixed top-0 inset-x-0 w-full backdrop-blur-lg border-b border-[#0f1a30] z-50">
+      <div className="mx-auto w-full flex items-center justify-between h-16">
         <Image
           alt="nebulaai Logo"
           width={170}
@@ -81,7 +81,7 @@ const Navbar = () => {
         {/* Desktop CTA Button */}
         <div className="hidden md:flex">
           <a
-            className="whitespace-nowrap rounded-md text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-blue-700 shadow hover:bg-blue-700/90 h-9 bg-gradient-to-r from-blue-700 to-blue-800 text-white py-1 px-6 flex items-center"
+            className="whitespace-nowrap rounded-md text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-blue-700 shadow hover:bg-blue-700/90 h-9 bg-gradient-to-r from-blue-700 to-blue-800 text-white py-2 px-6 flex items-center"
             href="https://dapp.nebulanetwork.ai/"
             target="_blank"
             rel="noopener noreferrer"
