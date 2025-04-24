@@ -3,7 +3,7 @@ import React from 'react';
 const Pricing = () => {
     return (
         <div id="pricing" className="h-full mx-auto w-full max-w-screen-xl px-4 md:px-20 flex flex-col items-center justify-center py-12 relative">
-            <div className="hidden md:block absolute -top-1/3 -left-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10"></div>
+            <div className="hidden md:block absolute -top-1/3 -left-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
 
             <div className="w-full h-full" style={{ opacity: 1, transform: 'none' }}>
                 <div className="mx-auto text-center md:mt-10">
@@ -21,7 +21,7 @@ const Pricing = () => {
                     <div className="relative flex flex-col items-center justify-center w-full py-20">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 relative overflow-visible w-full">
                             {/* Card 1 */}
-                            <div className="w-full h-full relative flex flex-col lg:flex-row items-center rounded-2xl lg:rounded-3xl bg-card border-2 border-[#172746] hover:border-border/100 transition-colors" style={{ opacity: 1, transform: 'none' }}>
+                            <div className="w-full h-full relative flex flex-col lg:flex-row items-center rounded-2xl lg:rounded-3xl bg-card border-2 border-[#0c1835] hover:border-border/100 transition-colors" style={{ opacity: 1, transform: 'none' }}>
                                 <div className="group relative flex size-full rounded-xl p-4 lg:p-6 lg:rounded-3xl flex-1">
                                     <div className="absolute inset-px z-10 rounded-3xl bg-[#000107]"></div>
                                     <div className="relative z-30 w-full">

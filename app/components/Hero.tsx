@@ -1,37 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Copy, Check } from 'lucide-react';
 import Image from 'next/image';
 import TextShimmerColor from '@/components/ui/text';
-import { Copy } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 
-
-function CopyToClipboard() {
-  navigator.clipboard.writeText("0x701C7542cD5D69494ef9fc8829a7F6093aD8084C");
-}
-
 const Hero = () => {
+
+  const [isCopied, setIsCopied] = useState(false);
+
+  function CopyToClipboard() {
+    navigator.clipboard.writeText('0x701C7542cD5D69494ef9fc8829a7F6093aD8084C')
+      .then(() => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+      });
+  }
+
 
   useGSAP(() => {
     gsap.from("#hero", { opacity: 0, duration: 1, y: 50 })
     gsap.from("#partners", {
-      opacity: 0, duration: 1, y: 50,stagger: 1,
+      opacity: 0, duration: 1, y: 50, stagger: 1,
       scrollTrigger: {
         trigger: "#partners",
         scroller: "body",
         start: "top 50%",
-        end:"top 30%",
+        end: "top 30%",
       }
     })
     gsap.from("#pricing", {
-      opacity: 0, duration: 1, y: 50,stagger: 1,
+      opacity: 0, duration: 1, y: 50, stagger: 1,
       scrollTrigger: {
         trigger: "#pricing",
         scroller: "body",
         start: "top 50%",
-        end:"top 30%",
+        end: "top 30%",
       }
     })
     gsap.from("#how-it-works", {
@@ -40,7 +46,7 @@ const Hero = () => {
         trigger: "#how-it-works",
         scroller: "body",
         start: "top 50%",
-        end:"top 30%",
+        end: "top 30%",
       }
     })
     gsap.from("#faq", {
@@ -49,7 +55,7 @@ const Hero = () => {
         trigger: "#faq",
         scroller: "body",
         start: "top 50%",
-        end:"top 30%",
+        end: "top 30%",
       }
     })
     gsap.from("#footer", {
@@ -64,13 +70,15 @@ const Hero = () => {
 
   return (
     <div id="hero" className="h-full mx-auto w-full max-w-screen-xl px-4 md:px-20">
-      <div className="absolute inset-0 white:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[120vh]"></div>
+      <div className="absolute inset-10 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[120vh]"></div>
 
       <div className="w-full h-full md:w-full" style={{ opacity: 1, transform: 'none' }}>
         <div className="flex flex-col items-center justify-center pt-40 h-full">
           <div className="flex items-center justify-between px-4 py-0 md:mb-0 mb-3 w-full max-w-sm rounded-full border bg-gradient-to-r from-black via-[#00093399] to-[#00082999] text-card-foreground shadow-sm">
             <code className="font-mono text-sm truncate">0x701C7542cD5D69494ef9fc8829a7F6093aD8084C</code>
-            <button onClick={CopyToClipboard} className='px-2 py-1.5 cursor-pointer'><Copy className='size-4' /></button>
+            <button onClick={CopyToClipboard} className='px-2 py-1.5 cursor-pointer hover:bg-[#25293a99] rounded-md'>
+              {isCopied ? <Check className='size-4 text-green-400' /> : <Copy className='size-4' />}
+            </button>
           </div>
           <div className="container mx-auto px-4 z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

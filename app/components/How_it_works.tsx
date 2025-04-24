@@ -40,7 +40,7 @@ const HowItWorks = () => {
 
         <div id="how-it-works" className="h-full mx-auto w-full max-w-screen-xl px-4 md:px-20 flex flex-col items-center justify-center py-12 relative">
             <div className="hidden md:block absolute top-auto -right-0 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
-            <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-blue-600 rounded-full blur-[10rem] -z-10"></div>
+            <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-blue-500 rounded-full blur-[10rem] -z-10"></div>
 
             <div className="w-full h-full" style={{ opacity: 1, transform: 'none' }}>
                 <div className="mx-auto text-center md:mt-10">
@@ -59,7 +59,7 @@ const HowItWorks = () => {
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className={`w-full h-full relative flex flex-col lg:flex-row items-center rounded-2xl lg:rounded-3xl bg-card border-2 border-[#172746] border-border/50 hover:border-border/100 transition-colors ${card.span}`}
+                            className={`w-full h-full relative flex flex-col lg:flex-row items-center rounded-2xl lg:rounded-3xl bg-card border-2 border-[#0c1835] border-border/50 hover:border-border/100 transition-colors ${card.span}`}
                             style={{ opacity: 1, transform: 'none' }}
                         >
                             <div className="group relative flex size-full rounded-xl p-4 lg:p-6 lg:rounded-3xl flex-1">

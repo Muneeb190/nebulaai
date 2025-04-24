@@ -6,7 +6,7 @@ const Partners = () => {
 
     return (
         <div id='partners' className="h-full mx-auto w-full max-w-screen-xl px-4 md:px-20 flex flex-col items-center justify-center py-4 relative">
-            <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
+            <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-blue-600 rounded-full blur-[10rem] -z-10"></div>
             <div className="w-full h-full" style={{ opacity: 1, transform: 'none' }}>
                 <div className="max-w-md mx-auto text-center">
                     <div className="relative inline-flex h-8 overflow-hidden rounded-full p-[1.5px] focus:outline-none select-none">

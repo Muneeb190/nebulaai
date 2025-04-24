@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-8 h-20 pt-2 fixed top-0 inset-x-0 w-full backdrop-blur-lg border-b border-[#0f1a30] z-50">
+    <header className="px-8 h-20 pt-2 fixed top-0 inset-x-0 w-full backdrop-blur-lg border-b border-[#0c1835] z-50">
       <div className="mx-auto w-full flex items-center justify-between h-16">
         <Image
           alt="nebulaai Logo"
