@@ -15,7 +15,7 @@ import React from 'react'
 
 const LogoTicker = () => {
     return (
-        <div className="py-8 md:py-12 ">
+        <div className="py-8 md:py-16 ">
             <div className="container">
                 <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
                     <motion.div className="flex gap-20 lg:gap-30 pr-28 flex-none "
