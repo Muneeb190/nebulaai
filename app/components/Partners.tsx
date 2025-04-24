@@ -1,9 +1,11 @@
-import { Logos3 } from '@/components/ui/logos3';
+
+import LogoTicker from '@/components/ui/LogoTicker';
 import React from 'react';
 
 const Partners = () => {
+
     return (
-        <div className="h-full mx-auto w-full max-w-screen-xl px-4 md:px-20 flex flex-col items-center justify-center py-4 relative">
+        <div id='partners' className="h-full mx-auto w-full max-w-screen-xl px-4 md:px-20 flex flex-col items-center justify-center py-4 relative">
             <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10"></div>
             <div className="w-full h-full" style={{ opacity: 1, transform: 'none' }}>
                 <div className="max-w-md mx-auto text-center">
@@ -19,7 +21,7 @@ const Partners = () => {
                 </div>
                 <div className="w-full h-full" style={{ opacity: 1, transform: 'none' }}>
                     <div className="w-full overflow-hidden sm:mt-12 mt-10 z-10">
-                        <Logos3 />
+                        <LogoTicker/>
                     </div>
                 </div>
             </div>

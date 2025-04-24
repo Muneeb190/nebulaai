@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex flex-col relative items-center justify-center border border-[#172746] mb-16 rounded-2xl pb-8 px-6 lg:px-8 w-full max-w-7xl mx-auto">
+    <footer id='footer' className="flex flex-col relative items-center justify-center border border-[#172746] mb-16 rounded-2xl pb-8 px-6 lg:px-8 w-full max-w-7xl mx-auto">
       {/* Background blurs */}
       <div className="hidden lg:block absolute bottom-0 -left-1/4 bg-blue-600 w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
       <div className="hidden lg:block absolute -top-1/3 right-2 bg-blue-600 w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
