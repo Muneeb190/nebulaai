@@ -10,12 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-4 h-21 py-2 fixed top-0 inset-x-0 w-full backdrop-blur-lg border-b border-[#172746] z-50">
+    <header className="h-21 py-2 fixed top-0 inset-x-0 w-full backdrop-blur-lg border-b border-[#0f1a30] z-50">
       <div className="container mx-auto w-full flex items-center justify-between h-16">
         <Image
           alt="nebulaai Logo"
-          width={180}
-          height={180}
+          width={170}
+          height={170}
           src="/nebulawidelogo.png"
           className="color-transparent"
           priority={false}
@@ -47,31 +47,31 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex md:items-center md:gap-6">
+        <div className="hidden md:flex md:items-center md:gap-14">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg py-2 hover:text-blue-700 font-semibold transition-colors duration-200"
+            className="text-md py-2 hover:text-blue-700 font-medium transition-colors duration-200"
             href="https://dapp.nebulanetwork.ai/"
           >
             Marketplace
           </a>
-          <a className="hover:text-blue-700 font-semibold transition-colors duration-200 text-lg py-2" href="#pricing">
+          <a className="hover:text-blue-700 font-medium transition-colors duration-200 text-md py-2" href="#pricing">
             Pricing
           </a>
-          <a className="hover:text-blue-700 font-semibold transition-colors duration-200 text-lg py-2" href="#how-it-works">
+          <a className="hover:text-blue-700 font-medium transition-colors duration-200 text-md py-2" href="#how-it-works">
             How it works
           </a>
-          <a className="hover:text-blue-700 font-semibold transition-colors duration-200 text-lg py-2" href="#roadmap">
+          <a className="hover:text-blue-700 font-medium transition-colors duration-200 text-md py-2" href="#roadmap">
             Roadmap
           </a>
-          <a className="hover:text-blue-700 font-semibold transition-colors duration-200 text-lg py-2" href="#faq">
+          <a className="hover:text-blue-700 font-medium transition-colors duration-200 text-md py-2" href="#faq">
             FAQs
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-700 font-semibold transition-colors duration-200 text-lg py-2"
+            className="hover:text-blue-700 font-medium transition-colors duration-200 text-md py-2"
             href="https://docs.nebulanetwork.ai/"
           >
             Docs
@@ -81,7 +81,7 @@ const Navbar = () => {
         {/* Desktop CTA Button */}
         <div className="hidden md:flex">
           <a
-            className="whitespace-nowrap rounded-md text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-blue-700 shadow hover:bg-blue-700/90 h-9 bg-gradient-to-r from-blue-700 to-blue-800 text-white py-2 px-8 flex items-center"
+            className="whitespace-nowrap rounded-md text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-blue-700 shadow hover:bg-blue-700/90 h-9 bg-gradient-to-r from-blue-700 to-blue-800 text-white py-1 px-6 flex items-center"
             href="https://dapp.nebulanetwork.ai/"
             target="_blank"
             rel="noopener noreferrer"
