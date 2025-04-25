@@ -21,7 +21,7 @@ const Pricing = () => {
                     <div className="relative flex flex-col items-center justify-center w-full py-20">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 relative overflow-visible w-full">
                             {/* Card 1 */}
-                            <div className="w-full h-full relative flex flex-col lg:flex-row items-center rounded-2xl lg:rounded-3xl bg-card border-2 border-[#0c1835] hover:border-border/100 transition-colors" style={{ opacity: 1, transform: 'none' }}>
+                            <div className="w-full h-full relative flex flex-col lg:flex-row items-center rounded-2xl lg:rounded-3xl bg-card border-2 border-[#172746] hover:border-border/100 transition-colors" style={{ opacity: 1, transform: 'none' }}>
                                 <div className="group relative flex size-full rounded-xl p-4 lg:p-6 lg:rounded-3xl flex-1">
                                     <div className="absolute inset-px z-10 rounded-3xl bg-[#000107]"></div>
                                     <div className="relative z-30 w-full">
